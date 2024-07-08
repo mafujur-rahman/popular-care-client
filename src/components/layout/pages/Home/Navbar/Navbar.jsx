@@ -2,8 +2,9 @@
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 container mx-auto">
-            <div className="navbar-start">
+        <div className=" bg-[#1e2537]">
+            <div className="navbar container mx-auto">
+            <div className="navbar-start ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
@@ -21,7 +22,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box text-xl text-gray-300 font-medium z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
                         <li><a>Workouts</a></li>
                         <li><a>Nutrition</a></li>
@@ -36,7 +37,7 @@ const Navbar = () => {
                 </a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal text-xl text-gray-300 font-medium px-1">
                     <li><a>Home</a></li>
                     <li><a>Workouts</a></li>
                     <li><a>Nutrition</a></li>
@@ -46,8 +47,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-[#1F6E53] text-white mr-2">Login</a>
-                <a className="btn bg-[#1F6E53] text-white">Sign up</a>
+                <a className="btn bg-[#9d47d0] border-none text-white mr-2">Login</a>
+                <a className="btn bg-[#9d47d0] border-none text-white">Sign up</a>
+            </div>
             </div>
         </div>
     );
