@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-[#9d47d0] border-none text-white mr-2">Login</a>
+                <NavLink to='/login'><a className="btn bg-[#9d47d0] border-none text-white mr-2">Login</a></NavLink>
                 <a className="btn bg-[#9d47d0] border-none text-white">Sign up</a>
             </div>
             </div>
