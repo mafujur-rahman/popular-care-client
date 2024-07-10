@@ -24,12 +24,12 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box text-xl text-gray-300 font-medium z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Workouts</a></li>
-                        <li><a>Nutrition</a></li>
-                        <li><a>Health</a></li>
-                        <li><a>Community</a></li>
-                        <li><a>Profile</a></li>
+                        <NavLink to='/'><li><a>Home</a></li></NavLink>
+                        <NavLink to='/workout'><li><a>Workouts</a></li></NavLink>
+                        <NavLink to='/nutrition'><li><a>Nutrition</a></li></NavLink>
+                        <NavLink to='/health'><li><a>Health</a></li></NavLink>
+                        <NavLink to='/community'><li><a>Community</a></li></NavLink>
+                        <NavLink to='/profile'><li><a>Profile</a></li></NavLink>
                     </ul>
                 </div>
                 {/* logo */}
@@ -39,17 +39,17 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal text-xl text-gray-300 font-medium px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Workouts</a></li>
-                    <li><a>Nutrition</a></li>
-                    <li><a>Health</a></li>
-                    <li><a>Community</a></li>
-                    <li><a>Profile</a></li>
+                    <NavLink to='/'><li><a>Home</a></li></NavLink>
+                    <NavLink to='/workout'><li><a>Workouts</a></li></NavLink>
+                    <NavLink to='/nutrition'><li><a>Nutrition</a></li></NavLink>
+                    <NavLink to='/health'><li><a>Health</a></li></NavLink>
+                    <NavLink to='/community'><li><a>Community</a></li></NavLink>
+                    <NavLink to='/profile'><li><a>Profile</a></li></NavLink>
                 </ul>
             </div>
             <div className="navbar-end">
                 <NavLink to='/login'><a className="btn bg-[#9d47d0] border-none text-white mr-2">Login</a></NavLink>
-                <a className="btn bg-[#9d47d0] border-none text-white">Sign up</a>
+                <NavLink to='/signup'><a className="btn bg-[#9d47d0] border-none text-white">Sign up</a></NavLink>
             </div>
             </div>
         </div>
