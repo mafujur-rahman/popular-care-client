@@ -8,7 +8,7 @@ const Login = () => {
             <div className="hero-content  flex-col ">
                 <div className="text-center lg:text-left  ">
                     <h1 className="text-5xl font-bold text-white mb-8"><span className="text-[#ac4ae0]">Welcome</span> Back.</h1>
-                    <h1 className="text-5xl font-bold text-white text-center pb-10">Login <span className="text-[#ac4ae0]">now!</span></h1>
+                    <h1 className="text-5xl font-bold text-white text-center pb-10">Login <span className="text-[#ac4ae0]">Now!</span></h1>
                 </div>
                 <div className="card bg-[#1f242d]  w-full max-w-sm shrink-0 shadow-2xl">
                     <form className="card-body ">
@@ -27,7 +27,7 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button className="btn bg-[#ac4ae0] text-white border-none">Login</button>
                             <button className="btn mt-4 bg-[#f79b2f] border-none"><FaGoogle /> LOGIN WITH GOOGLE</button>
-                            <p className="text-gray-300 pt-4">New here? <Link to='/signup'><span className="text-[#ac4ae0] font-bold cursor-pointer">Signup</span></Link> now!</p>
+                            <p className="text-gray-300 pt-4">New here? <Link to='/register'><span className="text-[#ac4ae0] font-bold cursor-pointer">Register</span></Link> now!</p>
                         </div>
                     </form>
                 </div>

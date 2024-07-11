@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <NavLink to='/login'><a className="btn bg-[#9d47d0] border-none text-white mr-2">Login</a></NavLink>
-                <NavLink to='/signup'><a className="btn bg-[#9d47d0] border-none text-white">Sign up</a></NavLink>
+                <NavLink to='/register'><a className="btn bg-[#9d47d0] border-none text-white">Sign up</a></NavLink>
             </div>
             </div>
         </div>
