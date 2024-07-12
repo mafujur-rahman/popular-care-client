@@ -20,7 +20,7 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -33,12 +33,11 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box text-xl text-gray-300 font-medium z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-[#323946] rounded-box text-xl text-white font-medium z-[2] mt-3 w-52 p-2 shadow">
                         <NavLink to='/'><li><a>Home</a></li></NavLink>
-                        <NavLink to='/workout'><li><a>Workouts</a></li></NavLink>
-                        <NavLink to='/nutrition'><li><a>Nutrition</a></li></NavLink>
-                        <NavLink to='/health'><li><a>Health</a></li></NavLink>
-                        <NavLink to='/community'><li><a>Community</a></li></NavLink>
+                        <NavLink to='/about-us'><li><a>About us</a></li></NavLink>
+                        <NavLink to='/services'><li><a>Services</a></li></NavLink>
+                        <NavLink to='/contact'><li><a>Contact</a></li></NavLink>
                         <NavLink to='/profile'><li><a>Profile</a></li></NavLink>
                     </ul>
                 </div>
@@ -50,10 +49,9 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal text-xl text-gray-300 font-medium px-1">
                     <NavLink to='/'><li><a>Home</a></li></NavLink>
-                    <NavLink to='/workout'><li><a>Workouts</a></li></NavLink>
-                    <NavLink to='/nutrition'><li><a>Nutrition</a></li></NavLink>
-                    <NavLink to='/health'><li><a>Health</a></li></NavLink>
-                    <NavLink to='/community'><li><a>Community</a></li></NavLink>
+                    <NavLink to='/workout'><li><a>About us</a></li></NavLink>
+                    <NavLink to='/services'><li><a>Services</a></li></NavLink>
+                    <NavLink to='/contact'><li><a>Contact</a></li></NavLink>
                     <NavLink to='/profile'><li><a>Profile</a></li></NavLink>
                 </ul>
             </div>
