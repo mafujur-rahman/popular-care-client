@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -12,9 +13,9 @@ const Banner = () => {
           <p className="text-lg md:text-xl text-white mb-12">
             Empowering patients and providers with advanced healthcare solutions. Simplifying appointments, managing medical records, and facilitating telemedicine consultations.
           </p>
-          <a href="/book-appointment" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full shadow-md inline-block transition duration-300">
+          <Link to='/book-appointment'><a  className="bg-[#ac4ae0] hover:bg-blue-700 text-white py-3 px-8 rounded-full shadow-md inline-block transition duration-300">
             Book Appointment
-          </a>
+          </a></Link>
         </div>
       </div>
     </section>

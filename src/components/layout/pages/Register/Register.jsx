@@ -81,7 +81,7 @@ const Register = () => {
         <div className="text-center bg-[#323946] min-h-screen flex justify-center items-center">
             <div className="hero-content  flex-col ">
                 <div className="text-center lg:text-left  ">
-                    <h1 className="text-5xl font-bold text-white mb-8">Welcome to <span className="text-[#ac4ae0]">FitTrack.</span> </h1>
+                    <h1 className="text-5xl font-bold text-white mb-8">Welcome to <span className="text-[#ac4ae0]">Popular Care.</span> </h1>
                     <h1 className="text-5xl font-bold text-white text-center pb-10"><span className="text-[#ac4ae0]">Register</span> Now!</h1>
                 </div>
                 <div className="card bg-[#1f242d]  w-full max-w-sm shrink-0 shadow-2xl">
