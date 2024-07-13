@@ -8,8 +8,9 @@ import MainHome from "../layout/pages/Home/MainHome/MainHome";
 import AboutUsPage from "../layout/pages/AboutUsPage/AboutUsPage";
 import ServicesPage from "../layout/pages/ServicesPage/ServicesPage";
 import ContactPage from "../layout/pages/ContactPage/ContactPage";
-import UserDashboard from "../layout/pages/Dashboard/UserDashboard/UserDashboard";
 import AppointmentBookingSection from "../layout/pages/Home/AppointmentBookingSection/AppointmentBookingSection";
+import AddBlog from "../layout/pages/Dashboard/DoctorDashboard/AddBlog";
+
 
 
 const router = createBrowserRouter([
@@ -42,8 +43,8 @@ const router = createBrowserRouter([
           element:<ContactPage></ContactPage>
         },
         {
-          path:"/profile",
-          element:<UserDashboard></UserDashboard>
+          path:'/profile',
+          element:<AddBlog></AddBlog>
         },
         {
           path:'/book-appointment',
