@@ -1,5 +1,3 @@
-
-
 const services = [
     {
         title: 'Appointment Scheduling',
@@ -57,26 +55,26 @@ const services = [
 
 const ServicesPage = () => {
     return (
-        <div className="text-gray-700">
-            <section className="py-16 bg-gray-50">
+        <div className="text-gray-700 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
+            <section className="py-16">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-12">Our Services</h2>
+                    <h2 className="text-4xl font-bold text-blue-700 mb-12">Our Services</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
-                            <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
-                                <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+                            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                                <h3 className="text-2xl font-semibold mb-4 text-blue-700">{service.title}</h3>
                                 <p className="text-lg mb-6">{service.description}</p>
-                                <h4 className="text-xl font-bold mb-3">Benefits:</h4>
-                                <ul className="list-disc list-inside mb-6 text-left">
+                                <h4 className="text-xl font-bold mb-3 text-blue-600">Benefits:</h4>
+                                <ul className="list-disc list-inside mb-6 text-left text-gray-600">
                                     {service.benefits.map((benefit, index) => (
                                         <li key={index} className="mb-2">{benefit}</li>
                                     ))}
                                 </ul>
-                                <h4 className="text-xl font-bold mb-3">Service Packages:</h4>
-                                <ul className="text-left">
+                                <h4 className="text-xl font-bold mb-3 text-blue-600">Service Packages:</h4>
+                                <ul className="text-left text-gray-600">
                                     {service.packages.map((pkg, index) => (
                                         <li key={index} className="mb-2">
-                                            <span className="font-semibold">{pkg.name}:</span> {pkg.features}
+                                            <span className="font-semibold text-blue-700">{pkg.name}:</span> {pkg.features}
                                         </li>
                                     ))}
                                 </ul>

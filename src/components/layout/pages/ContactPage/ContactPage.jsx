@@ -1,40 +1,38 @@
-
-
 const ContactPage = () => {
     return (
-        <div className="text-gray-700">
+        <div className="text-gray-700 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
             {/* Contact Form */}
-            <section className="py-16 bg-white">
+            <section className="py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
+                    <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Contact Us</h2>
                     <div className="flex flex-col lg:flex-row lg:space-x-12">
                         <div className="lg:w-1/2 mb-8 lg:mb-0">
-                            <form className="bg-gray-50 p-8 rounded-lg shadow-lg">
-                                <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                            <form className="bg-white p-8 rounded-lg shadow-lg">
+                                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Send Us a Message</h3>
                                 <div className="mb-4">
                                     <label className="block text-lg font-medium mb-2" htmlFor="name">Name</label>
-                                    <input className="w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:border-blue-500" type="text" id="name" placeholder="Your Name" />
+                                    <input className="w-full px-4 py-2 bg-gray-50 border rounded-lg focus:outline-none focus:border-blue-500" type="text" id="name" placeholder="Your Name" />
                                 </div>
                                 <div className="mb-4">
                                     <label className="block text-lg font-medium mb-2" htmlFor="email">Email</label>
-                                    <input className="w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:border-blue-500" type="email" id="email" placeholder="Your Email" />
+                                    <input className="w-full px-4 py-2 bg-gray-50 border rounded-lg focus:outline-none focus:border-blue-500" type="email" id="email" placeholder="Your Email" />
                                 </div>
                                 <div className="mb-4">
                                     <label className="block text-lg font-medium mb-2" htmlFor="message">Message</label>
-                                    <textarea className="w-full px-4 py-2 bg-white border rounded-lg focus:outline-none focus:border-blue-500" id="message" rows="6" placeholder="Your Message"></textarea>
+                                    <textarea className="w-full px-4 py-2 bg-gray-50 border rounded-lg focus:outline-none focus:border-blue-500" id="message" rows="6" placeholder="Your Message"></textarea>
                                 </div>
-                                <button className="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none">Send Message</button>
+                                <button className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none">Send Message</button>
                             </form>
                         </div>
                         <div className="lg:w-1/2">
                             <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-                                <h3 className="text-2xl font-semibold mb-6">Contact Details</h3>
+                                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Contact Details</h3>
                                 <p className="text-lg mb-2"><strong>Phone:</strong> (123) 456-7890</p>
-                                <p className="text-lg mb-2"><strong>Email:</strong> contact@mediconnect.com</p>
+                                <p className="text-lg mb-2"><strong>Email:</strong> contact@popularcare.com</p>
                                 <p className="text-lg mb-2"><strong>Address:</strong> 123 PopularCare Street, Health City, USA</p>
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-lg">
-                                <h3 className="text-2xl font-semibold mb-6">Our Location</h3>
+                                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Our Location</h3>
                                 <div className="h-64">
                                     <iframe
                                         className="w-full h-full rounded-lg"

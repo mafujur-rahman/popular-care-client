@@ -1,5 +1,3 @@
-
-
 const teamMembers = [
     {
         name: 'Jewel Doe',
@@ -37,17 +35,17 @@ const milestones = [
 
 const AboutUsPage = () => {
     return (
-        <div className="text-gray-700">
+        <div className="text-gray-700 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
             {/* Company Overview */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-6">About Us</h2>
-                    <p className="text-xl leading-relaxed mb-6">
-                        At PopularCare, our mission is to connect patients with healthcare providers seamlessly and efficiently. 
+                    <h2 className="text-4xl font-bold text-blue-700 mb-6">About Us</h2>
+                    <p className="text-lg leading-relaxed mb-6">
+                        At PopularCare, our mission is to connect patients with healthcare providers seamlessly and efficiently.
                         We believe in the power of technology to transform healthcare, making it more accessible and effective for everyone.
                     </p>
-                    <p className="text-xl leading-relaxed">
-                        Founded in 2015, PopularCare has grown from a small startup to a trusted name in healthcare technology, 
+                    <p className="text-lg leading-relaxed mb-6">
+                        Founded in 2015, PopularCare has grown from a small startup to a trusted name in healthcare technology,
                         serving thousands of users around the globe.
                     </p>
                 </div>
@@ -56,14 +54,14 @@ const AboutUsPage = () => {
             {/* Team Members */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-12">Our Team</h2>
+                    <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Our Team</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
                         {teamMembers.map((member, index) => (
                             <div key={index} className="text-center">
                                 <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
-                                <h3 className="text-2xl font-semibold">{member.name}</h3>
-                                <p className="text-blue-600">{member.title}</p>
-                                <p className="text-gray-600 mt-2">{member.bio}</p>
+                                <h3 className="text-2xl font-semibold text-blue-700">{member.name}</h3>
+                                <p className="text-lg text-gray-600">{member.title}</p>
+                                <p className="text-gray-700 mt-2">{member.bio}</p>
                             </div>
                         ))}
                     </div>
@@ -71,16 +69,16 @@ const AboutUsPage = () => {
             </section>
 
             {/* Company Milestones */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-12">Our Journey</h2>
+                    <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Our Journey</h2>
                     <div className="flex flex-col items-center space-y-8">
                         {milestones.map((milestone, index) => (
                             <div key={index} className="flex items-center w-full lg:w-2/3">
                                 <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
                                     {milestone.year}
                                 </div>
-                                <div className="ml-6 text-xl text-gray-700">
+                                <div className="ml-6 text-lg text-gray-700">
                                     {milestone.achievement}
                                 </div>
                             </div>

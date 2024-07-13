@@ -31,12 +31,12 @@ const features = [
 
 const FeaturesSection = () => {
     return (
-        <section className="py-20 bg-gray-100">
+        <section className="py-20 bg-gradient-to-r from-blue-50 to-blue-100">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Key Features of <span className='text-[#ac4ae0]'>Popular Care</span></h2>
+                <h2 className="text-3xl font-bold text-center mb-8">Key Features of <span className='text-blue-700'>Popular Care</span></h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div key={index} className="bg-white p-6 rounded-lg border shadow-lg focus:outline-none focus:border-blue-500 text-center">
                             <div className="mb-4 flex justify-center items-center">
                                 {feature.icon}
                             </div>

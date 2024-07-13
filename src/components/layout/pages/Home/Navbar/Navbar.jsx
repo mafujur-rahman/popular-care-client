@@ -37,8 +37,13 @@ const Navbar = () => {
                             <li>
                                 <NavLink
                                     to='/'
-                                    exact
-                                    className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                                    style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                                 >
                                     Home
                                 </NavLink>
@@ -46,7 +51,13 @@ const Navbar = () => {
                             <li>
                                 <NavLink
                                     to='/about-us'
-                                    className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                                   style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                                 >
                                     About us
                                 </NavLink>
@@ -54,7 +65,13 @@ const Navbar = () => {
                             <li>
                                 <NavLink
                                     to='/services'
-                                    className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                                   style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                                 >
                                     Services
                                 </NavLink>
@@ -62,7 +79,13 @@ const Navbar = () => {
                             <li>
                                 <NavLink
                                     to='/contact'
-                                    className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                                   style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                                 >
                                     Contact
                                 </NavLink>
@@ -70,7 +93,13 @@ const Navbar = () => {
                             <li>
                                 <NavLink
                                     to='/profile'
-                                    className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                                   style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                                 >
                                     Profile
                                 </NavLink>
@@ -87,8 +116,13 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to='/'
-                                exact
-                                className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                               style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                             >
                                 Home
                             </NavLink>
@@ -96,7 +130,13 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to='/about-us'
-                                className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                               style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                             >
                                 About us
                             </NavLink>
@@ -104,7 +144,13 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to='/services'
-                                className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                               style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                             >
                                 Services
                             </NavLink>
@@ -112,7 +158,13 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to='/contact'
-                                className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                               style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                             >
                                 Contact
                             </NavLink>
@@ -120,7 +172,13 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to='/profile'
-                                className={({ isActive }) => (isActive ? "bg-[#9d47d0]" : undefined)}
+                               style={({ isActive }) => {
+                                        return {
+                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            padding: isActive ? "8px" : "",
+                                            borderRadius: isActive ? "8px" : ""
+                                        };
+                                    }}
                             >
                                 Profile
                             </NavLink>
@@ -129,7 +187,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {user ? (
-                        <a onClick={handleLogout} className="btn bg-[#9d47d0] hover:bg-blue-700 border-none text-white mr-2">
+                        <a onClick={handleLogout} className="btn bg-blue-600 hover:bg-blue-700 border-none text-white mr-2">
                             Log out
                         </a>
                     ) : (
@@ -138,7 +196,7 @@ const Navbar = () => {
                                 to='/login'
                                 className={({ isActive }) => (isActive ? "active" : undefined)}
                             >
-                                <a className="btn bg-[#9d47d0] hover:bg-blue-700 border-none text-white mr-2">
+                                <a className="btn bg-blue-600 hover:bg-blue-700 border-none text-white mr-2">
                                     Login
                                 </a>
                             </NavLink>
@@ -146,7 +204,7 @@ const Navbar = () => {
                                 to='/register'
                                 className={({ isActive }) => (isActive ? "active" : undefined)}
                             >
-                                <a className="btn bg-[#9d47d0] hover:bg-blue-700 border-none text-white">
+                                <a className="btn bg-blue-600 hover:bg-blue-700 border-none text-white">
                                     Register
                                 </a>
                             </NavLink>

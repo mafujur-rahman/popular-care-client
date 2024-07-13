@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 // Mock data for upcoming events (replace with actual data or API call)
 const upcomingEventsData = [
     {
@@ -28,15 +27,15 @@ const upcomingEventsData = [
 const UpcomingEvents = () => {
     return (
         <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Upcoming Events</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">Upcoming Events</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {upcomingEventsData.map(event => (
-                    <div key={event.id} className="border p-4 rounded-lg shadow-md">
-                        <h3 className="text-xl font-medium mb-2">{event.title}</h3>
+                    <div key={event.id} className="bg-white p-6 rounded-lg border shadow-md">
+                        <h3 className="text-xl font-semibold mb-2 text-blue-700">{event.title}</h3>
                         <p className="text-gray-600 mb-2">{event.date} | {event.time}</p>
                         <p className="text-gray-700 mb-4">{event.location}</p>
                         <p className="text-gray-800">{event.description}</p>
-                        <a href={event.registrationLink} className="text-blue-500 hover:underline block mt-2">
+                        <a href={event.registrationLink} className="text-blue-500 hover:underline block mt-4">
                             Register Now
                         </a>
                     </div>
@@ -46,7 +45,7 @@ const UpcomingEvents = () => {
     );
 };
 
-// Component for Registration
+// Component for Registration Form
 const Registration = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -75,8 +74,8 @@ const Registration = () => {
 
     return (
         <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Registration</h2>
-            <form onSubmit={handleSubmit} className="max-w-md">
+            <h2 className="text-3xl font-semibold mb-6 text-center"><span className="text-blue-700">Register</span> for an Event</h2>
+            <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
                 <div className="mb-4">
                     <label htmlFor="fullName" className="block text-gray-700 mb-2">Full Name</label>
                     <input
@@ -116,13 +115,30 @@ const Registration = () => {
                         ))}
                     </select>
                 </div>
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                <button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">
                     Register
                 </button>
             </form>
         </div>
     );
 };
+
+// Main Events and Webinars Section Component
+const EventsWebinarsSection = () => {
+    return (
+        <div className="container mx-auto py-12">
+            <UpcomingEvents />
+            <Registration />
+        </div>
+    );
+};
+
+export default EventsWebinarsSection;
+
+
+
+
+
 
 // Component for Event Details (single event view)
 // const EventDetails = ({ event }) => {
@@ -136,17 +152,3 @@ const Registration = () => {
 //         </div>
 //     );
 // };
-
-// Main Events and Webinars Section Component
-const EventsWebinarsSection = () => {
-    return (
-        <div className="container mx-auto py-12">
-            <UpcomingEvents />
-            <Registration />
-            {/* Example of Event Details component */}
-            {/* <EventDetails event={selectedEvent} /> */}
-        </div>
-    );
-};
-
-export default EventsWebinarsSection;
