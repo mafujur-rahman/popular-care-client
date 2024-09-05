@@ -26,16 +26,16 @@ const upcomingEventsData = [
 // Component for displaying Upcoming Events
 const UpcomingEvents = () => {
     return (
-        <div className="my-8">
-            <h2 className="text-3xl font-semibold text-blue-700 mb-6 text-center">Upcoming Events</h2>
+        <div className="my-8 ">
+            <h2 className="text-4xl font-bold text-center text-indigo-600 mb-6">Upcoming <span className="text-purple-600">Events</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {upcomingEventsData.map(event => (
-                    <div key={event.id} className="bg-white p-6 rounded-lg border shadow-md">
-                        <h3 className="text-xl font-semibold mb-2 text-blue-700">{event.title}</h3>
+                    <div key={event.id} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition duration-300 ease-in-out">
+                        <h3 className="text-2xl font-bold mb-2 text-indigo-600">{event.title}</h3>
                         <p className="text-gray-600 mb-2">{event.date} | {event.time}</p>
                         <p className="text-gray-700 mb-4">{event.location}</p>
                         <p className="text-gray-800">{event.description}</p>
-                        <a href={event.registrationLink} className="text-blue-500 hover:underline block mt-4">
+                        <a href={event.registrationLink} className="text-orange-500 hover:underline block mt-4">
                             Register Now
                         </a>
                     </div>
@@ -45,7 +45,6 @@ const UpcomingEvents = () => {
     );
 };
 
-// Component for Registration Form
 const Registration = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -73,9 +72,9 @@ const Registration = () => {
     };
 
     return (
-        <div className="my-8">
-            <h2 className="text-3xl font-semibold mb-6 text-center"><span className="text-blue-700">Register</span> for an Event</h2>
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div className="my-8 ">
+            <h2 className="text-4xl font-bold text-center mb-6"><span className="text-purple-600">Register</span> for an Event</h2>
+            <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8  rounded-lg shadow-md border border-gray-200 hover:border-indigo-500 hover:shadow-lg transition duration-300 ease-in-out">
                 <div className="mb-4">
                     <label htmlFor="fullName" className="block text-gray-700 mb-2">Full Name</label>
                     <input
@@ -85,7 +84,7 @@ const Registration = () => {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-orange-500"
                     />
                 </div>
                 <div className="mb-4">
@@ -97,7 +96,7 @@ const Registration = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-orange-500"
                     />
                 </div>
                 <div className="mb-4">
@@ -108,14 +107,14 @@ const Registration = () => {
                         value={formData.event}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-orange-500">
                         <option value="">Select an Event</option>
                         {upcomingEventsData.map(event => (
                             <option key={event.id} value={event.title}>{event.title}</option>
                         ))}
                     </select>
                 </div>
-                <button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">
+                <button type="submit" className="w-full bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 focus:outline-none">
                     Register
                 </button>
             </form>
@@ -123,18 +122,18 @@ const Registration = () => {
     );
 };
 
-// Main Events and Webinars Section Component
 const EventsWebinarsSection = () => {
     return (
-        <div className="container mx-auto py-12">
-            <UpcomingEvents />
-            <Registration />
+        <div className="bg-white">
+            <div className="container mx-auto py-12">
+                <UpcomingEvents />
+                <Registration />
+            </div>
         </div>
     );
 };
 
 export default EventsWebinarsSection;
-
 
 
 

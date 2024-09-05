@@ -35,59 +35,59 @@ const milestones = [
 
 const AboutUsPage = () => {
     return (
-        <div className="text-gray-700 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
-            {/* Company Overview */}
-            <section className="py-16">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold text-blue-700 mb-6">About Us</h2>
-                    <p className="text-lg leading-relaxed mb-6">
-                        At PopularCare, our mission is to connect patients with healthcare providers seamlessly and efficiently.
-                        We believe in the power of technology to transform healthcare, making it more accessible and effective for everyone.
-                    </p>
-                    <p className="text-lg leading-relaxed mb-6">
-                        Founded in 2015, PopularCare has grown from a small startup to a trusted name in healthcare technology,
-                        serving thousands of users around the globe.
-                    </p>
+      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 min-h-screen">
+        {/* Company Overview */}
+        <section className="py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-5xl font-bold text-white mb-6">About Us</h2>
+            <p className="text-2xl leading-relaxed mb-6 text-gray-300">
+              At PopularCare, our mission is to connect patients with healthcare providers seamlessly and efficiently.
+              We believe in the power of technology to transform healthcare, making it more accessible and effective for everyone.
+            </p>
+            <p className="text-2xl leading-relaxed mb-6 text-gray-300">
+              Founded in 2015, PopularCare has grown from a small startup to a trusted name in healthcare technology,
+              serving thousands of users around the globe.
+            </p>
+          </div>
+        </section>
+  
+        {/* Team Members */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-5xl font-bold text-center text-indigo-600 mb-12">Our Team</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+              {teamMembers.map((member, index) => (
+                <div key={index} className="text-center">
+                  <img src={member.image} alt={member.name} className="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" />
+                  <h3 className="text-3xl font-semibold text-indigo-600">{member.name}</h3>
+                  <p className="text-2xl text-gray-600">{member.title}</p>
+                  <p className="text-gray-700 mt-2">{member.bio}</p>
                 </div>
-            </section>
-
-            {/* Team Members */}
-            <section className="py-16 bg-white">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Our Team</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                        {teamMembers.map((member, index) => (
-                            <div key={index} className="text-center">
-                                <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
-                                <h3 className="text-2xl font-semibold text-blue-700">{member.name}</h3>
-                                <p className="text-lg text-gray-600">{member.title}</p>
-                                <p className="text-gray-700 mt-2">{member.bio}</p>
-                            </div>
-                        ))}
-                    </div>
+              ))}
+            </div>
+          </div>
+        </section>
+  
+        {/* Company Milestones */}
+        <section className="py-20 bg-gradient-to-r from-indigo-500 to-purple-500">
+          <div className="container mx-auto px-4">
+            <h2 className="text-5xl font-bold text-center text-white mb-12">Our Journey</h2>
+            <div className="flex flex-col items-center space-y-8">
+              {milestones.map((milestone, index) => (
+                <div key={index} className="flex items-center w-full lg:w-2/3">
+                  <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                    {milestone.year}
+                  </div>
+                  <div className="ml-6 text-2xl text-gray-300">
+                    {milestone.achievement}
+                  </div>
                 </div>
-            </section>
-
-            {/* Company Milestones */}
-            <section className="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Our Journey</h2>
-                    <div className="flex flex-col items-center space-y-8">
-                        {milestones.map((milestone, index) => (
-                            <div key={index} className="flex items-center w-full lg:w-2/3">
-                                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
-                                    {milestone.year}
-                                </div>
-                                <div className="ml-6 text-lg text-gray-700">
-                                    {milestone.achievement}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-        </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     );
-};
-
-export default AboutUsPage;
+  };
+  
+  export default AboutUsPage;

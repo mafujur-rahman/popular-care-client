@@ -55,36 +55,68 @@ const services = [
 
 const ServicesPage = () => {
     return (
-        <div className="text-gray-700 bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
-            <section className="py-16">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold text-blue-700 mb-12">Our Services</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
-                            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <h3 className="text-2xl font-semibold mb-4 text-blue-700">{service.title}</h3>
-                                <p className="text-lg mb-6">{service.description}</p>
-                                <h4 className="text-xl font-bold mb-3 text-blue-600">Benefits:</h4>
-                                <ul className="list-disc list-inside mb-6 text-left text-gray-600">
-                                    {service.benefits.map((benefit, index) => (
-                                        <li key={index} className="mb-2">{benefit}</li>
-                                    ))}
-                                </ul>
-                                <h4 className="text-xl font-bold mb-3 text-blue-600">Service Packages:</h4>
-                                <ul className="text-left text-gray-600">
-                                    {service.packages.map((pkg, index) => (
-                                        <li key={index} className="mb-2">
-                                            <span className="font-semibold text-blue-700">{pkg.name}:</span> {pkg.features}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
+      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 min-h-screen">
+        <section className="py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-5xl font-bold text-white mb-12">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {services.map((service, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                  <div className="p-8">
+                    <h3 className="text-3xl font-semibold mb-4 text-indigo-600">{service.title}</h3>
+                    <p className="text-lg mb-6">{service.description}</p>
+                    <div className="flex flex-wrap justify-center mb-6">
+                      {service.benefits.map((benefit, index) => (
+                        <div key={index} className="mr-4 mb-4 flex items-center">
+                          <svg
+                            className="w-6 h-6 text-green-500 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            {index === 0? (
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M5 13l4 4L19 7"
+                              />
+                            ) : index === 1? (
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M12 8v4m0 4h.01"
+                              />
+                            ) : (
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 12l2 2 4-4m5 -3l2 2 4-4"
+                              />
+                            )}
+                          </svg>
+                          <span className="text-lg">{benefit}</span>
+                        </div>
+                      ))}
                     </div>
+                    <h4 className="text-2xl font-bold mb-3 text-indigo-600">Service Packages:</h4>
+                    <ul className="text-left text-gray-600">
+                      {service.packages.map((pkg, index) => (
+                        <li key={index} className="mb-2">
+                          <span className="font-semibold text-indigo-600">{pkg.name}:</span> {pkg.features}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-            </section>
-        </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     );
-};
-
-export default ServicesPage;
+  };
+  
+  export default ServicesPage;

@@ -8,12 +8,12 @@ const Banner = () => {
       <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between relative z-10">
         <div className="lg:w-1/2">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-            Welcome to <span className="text-[#0ef]">Popular Care</span>
+            Welcome to <span className="text-purple-600">Popular Care</span>
           </h1>
           <p className="text-lg md:text-xl text-white mb-12">
             Empowering patients and providers with advanced healthcare solutions. Simplifying appointments, managing medical records, and facilitating telemedicine consultations.
           </p>
-          <Link to='/book-appointment'><a  className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full shadow-md inline-block transition duration-300">
+          <Link to='/book-appointment'><a  className="bg-indigo-600 hover:bg-purple-600 text-white py-3 px-8 rounded-full shadow-md inline-block transition duration-300">
             Book Appointment
           </a></Link>
         </div>

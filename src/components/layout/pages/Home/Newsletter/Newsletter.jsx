@@ -1,20 +1,17 @@
 import { useState } from "react";
 
-// Mock data for past newsletters (replace with actual data or API call)
+
 const pastNewslettersData = [
     {
         id: 1,
         title: 'Monthly Health Tips - July 2024',
         date: 'July 31, 2024',
-        link: '#', // Replace with actual link to newsletter
     },
     {
         id: 2,
         title: 'Special Edition: Telemedicine Benefits',
         date: 'June 15, 2024',
-        link: '#', // Replace with actual link to newsletter
     },
-    // Add more newsletters as needed
 ];
 
 // Component for Newsletter Sign-Up Form
@@ -27,9 +24,7 @@ const NewsletterSignupForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Implement newsletter subscription logic here (e.g., API call)
         console.log('Subscribed with email:', email);
-        // Reset form after submission (optional)
         setEmail('');
     };
 
@@ -78,7 +73,7 @@ const PastNewsletters = () => {
 // Main Newsletter Subscription Section Component
 const NewsletterSubscriptionSection = () => {
     return (
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className="bg-gradient-to-r from-indigo-500 to-purple-500">
             <div className="container mx-auto py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <NewsletterSignupForm />

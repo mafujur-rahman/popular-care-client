@@ -39,7 +39,7 @@ const Navbar = () => {
                                     to='/'
                                     style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -53,7 +53,7 @@ const Navbar = () => {
                                     to='/about-us'
                                    style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -67,7 +67,7 @@ const Navbar = () => {
                                     to='/services'
                                    style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -81,27 +81,13 @@ const Navbar = () => {
                                     to='/contact'
                                    style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
                                     }}
                                 >
                                     Contact
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to='/profile'
-                                   style={({ isActive }) => {
-                                        return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
-                                            padding: isActive ? "8px" : "",
-                                            borderRadius: isActive ? "8px" : ""
-                                        };
-                                    }}
-                                >
-                                    Profile
                                 </NavLink>
                             </li>
                         </ul>
@@ -118,7 +104,7 @@ const Navbar = () => {
                                 to='/'
                                style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -132,7 +118,7 @@ const Navbar = () => {
                                 to='/about-us'
                                style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -146,7 +132,7 @@ const Navbar = () => {
                                 to='/services'
                                style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -160,7 +146,7 @@ const Navbar = () => {
                                 to='/contact'
                                style={({ isActive }) => {
                                         return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
+                                            backgroundColor: isActive ? "#4F46E5" : "",
                                             padding: isActive ? "8px" : "",
                                             borderRadius: isActive ? "8px" : ""
                                         };
@@ -169,25 +155,11 @@ const Navbar = () => {
                                 Contact
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink
-                                to='/profile'
-                               style={({ isActive }) => {
-                                        return {
-                                            backgroundColor: isActive ? "#1976D2" : "",
-                                            padding: isActive ? "8px" : "",
-                                            borderRadius: isActive ? "8px" : ""
-                                        };
-                                    }}
-                            >
-                                Profile
-                            </NavLink>
-                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end">
                     {user ? (
-                        <a onClick={handleLogout} className="btn bg-blue-600 hover:bg-blue-700 border-none text-white mr-2">
+                        <a onClick={handleLogout} className="btn bg-indigo-600 hover:bg-purple-600 border-none text-white mr-2">
                             Log out
                         </a>
                     ) : (
@@ -196,7 +168,7 @@ const Navbar = () => {
                                 to='/login'
                                 className={({ isActive }) => (isActive ? "active" : undefined)}
                             >
-                                <a className="btn bg-blue-600 hover:bg-blue-700 border-none text-white mr-2">
+                                <a className="btn bg-indigo-600 hover:bg-purple-600 border-none text-white mr-2">
                                     Login
                                 </a>
                             </NavLink>
@@ -204,7 +176,7 @@ const Navbar = () => {
                                 to='/register'
                                 className={({ isActive }) => (isActive ? "active" : undefined)}
                             >
-                                <a className="btn bg-blue-600 hover:bg-blue-700 border-none text-white">
+                                <a className="btn bg-indigo-600 hover:bg-purple-600 border-none text-white">
                                     Register
                                 </a>
                             </NavLink>
