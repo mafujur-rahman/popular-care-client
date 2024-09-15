@@ -1,6 +1,6 @@
-# MediConnect - Healthcare Management System 🏥
+# Popular Care - Healthcare Management System 🏥
 
-MediConnect is a comprehensive healthcare management system designed to simplify the process of booking medical appointments, accessing telemedicine consultations, managing medical records, and monitoring health metrics. The project aims to provide a seamless experience for patients and healthcare providers through a user-friendly web interface and efficient service delivery.
+PopularCare is a comprehensive healthcare management system designed to simplify the process of booking medical appointments, accessing telemedicine consultations, managing medical records, and monitoring health metrics. The project aims to provide a seamless experience for patients and healthcare providers through a user-friendly web interface and efficient service delivery.
 
 
 ## Live Site
